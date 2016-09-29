@@ -75,7 +75,9 @@ namespace Microsoft.Extensions.Logging.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
+        //we're catching an AggregateException because the guts of the logger will actually catch the
+        //InvalidOperatoinException and rethrow an AggregateException
+        [ExpectedException(typeof(AggregateException))]
         public void LogInformation_ThrowException_Throws()
         {
             CustomLogger.CustomLogger customLogger = null;
