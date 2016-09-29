@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace Microsoft.Extensions.Tests.Logging
+﻿namespace Microsoft.Extensions.Logging.Tests.CustomLogger
 {
     public static class ApplicationLogging
     {

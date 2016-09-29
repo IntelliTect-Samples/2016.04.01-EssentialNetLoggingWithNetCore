@@ -112,17 +112,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ApplicationLogging.cs" />
+    <Compile Include="CustomLogger\ApplicationLogging.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="CustomLogger\CustomLogger.cs" />
     <Compile Include="CustomLogger\CustomLoggerFactoryExtensions.cs" />
     <Compile Include="CustomLogger\CustomLoggerProvider.cs" />
     <Compile Include="CustomLogger\CustomLoggerProviderEventArgs.cs" />
     <Compile Include="LoggingTests.cs" />
-    <Compile Include="NLogLoggingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConsoleLoggerTests.cs" />
-    <Compile Include="Tester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Logging.cd" />
@@ -130,9 +127,6 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ToDo.txt" />
   </ItemGroup>
   <ItemGroup />
   <Choose>

@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.Logging.Tests.CustomLogger
 {
     public class CustomLoggerProvider : ILoggerProvider
     {
-        public CustomLoggerProvider() {}
+        public CustomLoggerProvider() { }
         public CustomLoggerProvider(EventHandler<CustomLoggerProviderEventArgs> onCreateLogger)
         {
             OnCreateLogger = onCreateLogger;
@@ -23,7 +23,7 @@ namespace Microsoft.Extensions.Logging.Tests.CustomLogger
             return customLogger;
         }
 
-        public void Dispose(){}
+        public void Dispose() { }
 
         public event EventHandler<CustomLoggerProviderEventArgs> OnCreateLogger = delegate { };
 
